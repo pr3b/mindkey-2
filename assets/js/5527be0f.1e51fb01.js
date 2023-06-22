@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmindkey_2=self.webpackChunkmindkey_2||[]).push([[371],{6573:e=>{e.exports=JSON.parse('{"permalink":"/mindkey-2/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

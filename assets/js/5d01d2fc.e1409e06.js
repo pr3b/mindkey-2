@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmindkey_2=self.webpackChunkmindkey_2||[]).push([[648],{5944:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/mindkey-2/blog/tags/hola","allTagsPath":"/mindkey-2/blog/tags","count":1}')}}]);
