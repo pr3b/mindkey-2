@@ -14,7 +14,7 @@ const config = {
   url: "https://pr3b.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/mindkey-2/",
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
