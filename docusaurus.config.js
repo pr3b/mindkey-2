@@ -58,11 +58,33 @@ const config = {
         },
       }),
     ],
+    [
+      "redocusaurus",
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            id: "apiref",
+            spec: "swagger.yaml",
+            route: "docs/recruitingAPI",
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: "#000000",
+        },
+      },
+    ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      mermaid: {
+        theme: "default", // Set the Mermaid.js theme
+        startOnLoad: false, // Delay rendering until activated
+      },
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
@@ -76,9 +98,37 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Get Started",
+            to: "docs/mindkey-api",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Integrations",
+            to: "docs/integration",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Recruiting",
+            to: "docs/recruiting",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "System",
+            to: "docs/system-api",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "OpenAPI",
+            href: "docs/recruitingAPI",
+          },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
@@ -93,8 +143,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Get Started",
+                to: "/docs/mindkey-api",
               },
             ],
           },
